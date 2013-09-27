@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{6099710f-4c0b-4708-a181-a657aad5ac5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL">
+      <UniqueIdentifier>{654a0df8-9ddb-4808-95b9-ce7343028d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL\Programs">
+      <UniqueIdentifier>{1e5bc8ec-6280-4153-98c4-a148612b0003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL\Programs\Shaders">
+      <UniqueIdentifier>{c0400015-261a-4ce9-85ef-39298fcbf06b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OCL_Program.cpp">
+      <Filter>OpenCL\Programs</Filter>
+    </ClCompile>
+    <ClCompile Include="OCL_Environment.cpp">
+      <Filter>OpenCL</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorAddProgram.cpp">
+      <Filter>OpenCL\Programs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VectorAddProgram.h">
+      <Filter>OpenCL\Programs</Filter>
+    </ClInclude>
+    <ClInclude Include="CLERR.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="OCL_Program.h">
+      <Filter>OpenCL\Programs</Filter>
+    </ClInclude>
+    <ClInclude Include="OCL_Environment.h">
+      <Filter>OpenCL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vector_add_kernel.cl">
+      <Filter>OpenCL\Programs\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
