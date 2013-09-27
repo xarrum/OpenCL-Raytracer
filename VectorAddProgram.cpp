@@ -32,7 +32,7 @@ void VectorAddProgram::Execute( cl_command_queue commandQueue )
 	CLERR(ret);
 
 	//Display results
-	for( int i = 0; i < LIST_SIZE; i++ )
+	for( int i = 0; i < LIST_SIZE; i+=128 )
 		std::cout << A[i] << " + " << B[i] << " = " << C[i] << "\n";
 }
 

@@ -39,6 +39,7 @@
     <ClInclude Include="OCL_Environment.h">
       <Filter>OpenCL</Filter>
     </ClInclude>
+    <ClInclude Include="GLFWInclude.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="vector_add_kernel.cl">

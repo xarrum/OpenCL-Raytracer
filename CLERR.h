@@ -10,7 +10,10 @@
 		int i = std::abs(x); \
 		if(i <= 64){ \
 			std::cout<<"OpenCL Error: \'"<<errorStrings[i]<<"\' \'"<<__FILE__<<"\' Line "<<__LINE__<<"\nPress any key to continue...\n"; \
-		} \
+		} else\
+		{\
+			std::cout<<"OpenCL Error: " << i << " Unknown Error " <<__FILE__<<"\' Line "<<__LINE__<<"\nPress any key to continue...\n"; \
+		}\
 		std::cin.get();\
 	}
 
